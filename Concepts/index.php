@@ -172,7 +172,8 @@ switch($options){
 
 	case 13:
 		$client = new Client;
-		$client->integerSorting();
+		$client->sortData();
+		$client->searchDatum();
 		break;
 
 	default:
