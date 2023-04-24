@@ -7,7 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Trt\\' => array($baseDir . '/Traits'),
+    'Sp\\' => array($baseDir . '/DesignPatterns/StrategyPattern'),
     'SE\\' => array($baseDir . '/Singleton'),
+    'Op\\' => array($baseDir . '/DesignPatterns/ObserverPattern'),
     'Name\\' => array($baseDir . '/namespace'),
     'MM\\' => array($baseDir . '/MagicMethods'),
     'It\\' => array($baseDir . '/Iterator'),
@@ -15,6 +17,7 @@ return array(
     'In\\' => array($baseDir . '/Inheritance'),
     'GI\\' => array($baseDir . '/Generators'),
     'FIE\\' => array($baseDir . '/FileHandling'),
+    'DIC\\' => array($baseDir . '/DependencyInjectionContainer'),
     'CE\\' => array($baseDir . '/Closures'),
     'Ab\\' => array($baseDir . '/Abstraction'),
 );

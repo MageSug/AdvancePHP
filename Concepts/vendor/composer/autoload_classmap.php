@@ -6,25 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Ab\\AbstractImplementation' => $baseDir . '/Abstraction/AbstractImplementation.php',
-    'Ab\\Abstractt' => $baseDir . '/Abstraction/Abstractt.php',
-    'CE\\ClosureExampleWithScope' => $baseDir . '/Closures/ClosureExampleWithScope.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'FIE\\CsvFileService' => $baseDir . '/FileHandling/CsvFileService.php',
-    'FIE\\FileHandling' => $baseDir . '/FileHandling/FileHandling.php',
-    'FIE\\FileInterface' => $baseDir . '/FileHandling/FileInterface.php',
-    'FIE\\TextFileService' => $baseDir . '/FileHandling/TextFileService.php',
-    'GI\\GeneratorImplementation' => $baseDir . '/Generators/GeneratorImplementation.php',
-    'In\\TestClassChild' => $baseDir . '/Inheritance/TestClassChild.php',
-    'In\\TestClassParent' => $baseDir . '/Inheritance/TestClassParent.php',
-    'Inter\\Inter1' => $baseDir . '/interfaces/Inter1.php',
-    'Inter\\Inter2' => $baseDir . '/interfaces/Inter2.php',
-    'It\\FilterArray' => $baseDir . '/Iterator/FilterArray.php',
-    'It\\IteratorImplementation' => $baseDir . '/Iterator/IteratorImplementation.php',
-    'MM\\MagicMethods' => $baseDir . '/MagicMethods/MagicMethods.php',
-    'Name\\First' => $baseDir . '/namespace/First.php',
-    'Name\\Second' => $baseDir . '/namespace/Second.php',
-    'SE\\SingletonChild' => $baseDir . '/Singleton/SingletonChild.php',
-    'SE\\SingletonExample' => $baseDir . '/Singleton/SingletonExample.php',
-    'Trt\\traitexample' => $baseDir . '/Traits/traitexample.php',
 );

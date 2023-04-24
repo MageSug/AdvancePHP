@@ -19,7 +19,8 @@ class CsvFileService implements FileInterface {
             for($i=0; $i<$n; $i++) {
                 echo $row[$i];
             }
-            echo "<br>";
+            // echo "<br>";
+            echo PHP_EOL;
 		}
         fclose($this->fp);
     }

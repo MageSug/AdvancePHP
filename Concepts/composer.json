@@ -12,7 +12,10 @@
             "GI\\" : "Generators",
             "CE\\" : "Closures",
             "FIE\\" : "FileHandling",
-            "In\\" : "Inheritance"
+            "In\\" : "Inheritance",
+            "Op\\" : "DesignPatterns/ObserverPattern",
+            "Sp\\" : "DesignPatterns/StrategyPattern",
+            "DIC\\" : "DependencyInjectionContainer"
         }
     }
 }

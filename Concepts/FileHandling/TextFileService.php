@@ -27,20 +27,20 @@ class TextFileService implements FileInterface {
         fclose($this->fp);
 	}
 
-	public function copy(?string $source = null, string $destination = null) {
-		$this->sourceFile = $source;
-		$this->destinationFile = $destination;
-		if(copy($this->sourceFile, $this->destinationFile)) {
-			echo "copy success <br>";
-		}
-	}
+	// public function copy(?string $source = null, string $destination = null) {
+	// 	$this->sourceFile = $source;
+	// 	$this->destinationFile = $destination;
+	// 	if(copy($this->sourceFile, $this->destinationFile)) {
+	// 		echo "copy success <br>";
+	// 	}
+	// }
 
-	public function delete(?string $pathToFile = null) {
-		$this->filePath = $pathToFile;
-		if(!empty($this->filePath) and $this->filePath !== null) {
-			unlink($this->filePath);
-			echo "Delete successful <br>";
-		}
-	}
+	// public function delete(?string $pathToFile = null) {
+	// 	$this->filePath = $pathToFile;
+	// 	if(!empty($this->filePath) and $this->filePath !== null) {
+	// 		unlink($this->filePath);
+	// 		echo "Delete successful <br>";
+	// 	}
+	// }
 
 }

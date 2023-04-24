@@ -13,7 +13,12 @@ class ComposerStaticInit23d4025208c02f14f09ac89f087681dd
         ),
         'S' => 
         array (
+            'Sp\\' => 3,
             'SE\\' => 3,
+        ),
+        'O' => 
+        array (
+            'Op\\' => 3,
         ),
         'N' => 
         array (
@@ -37,6 +42,10 @@ class ComposerStaticInit23d4025208c02f14f09ac89f087681dd
         array (
             'FIE\\' => 4,
         ),
+        'D' => 
+        array (
+            'DIC\\' => 4,
+        ),
         'C' => 
         array (
             'CE\\' => 3,
@@ -52,9 +61,17 @@ class ComposerStaticInit23d4025208c02f14f09ac89f087681dd
         array (
             0 => __DIR__ . '/../..' . '/Traits',
         ),
+        'Sp\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/DesignPatterns/StrategyPattern',
+        ),
         'SE\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Singleton',
+        ),
+        'Op\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/DesignPatterns/ObserverPattern',
         ),
         'Name\\' => 
         array (
@@ -84,6 +101,10 @@ class ComposerStaticInit23d4025208c02f14f09ac89f087681dd
         array (
             0 => __DIR__ . '/../..' . '/FileHandling',
         ),
+        'DIC\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/DependencyInjectionContainer',
+        ),
         'CE\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Closures',
@@ -95,27 +116,7 @@ class ComposerStaticInit23d4025208c02f14f09ac89f087681dd
     );
 
     public static $classMap = array (
-        'Ab\\AbstractImplementation' => __DIR__ . '/../..' . '/Abstraction/AbstractImplementation.php',
-        'Ab\\Abstractt' => __DIR__ . '/../..' . '/Abstraction/Abstractt.php',
-        'CE\\ClosureExampleWithScope' => __DIR__ . '/../..' . '/Closures/ClosureExampleWithScope.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'FIE\\CsvFileService' => __DIR__ . '/../..' . '/FileHandling/CsvFileService.php',
-        'FIE\\FileHandling' => __DIR__ . '/../..' . '/FileHandling/FileHandling.php',
-        'FIE\\FileInterface' => __DIR__ . '/../..' . '/FileHandling/FileInterface.php',
-        'FIE\\TextFileService' => __DIR__ . '/../..' . '/FileHandling/TextFileService.php',
-        'GI\\GeneratorImplementation' => __DIR__ . '/../..' . '/Generators/GeneratorImplementation.php',
-        'In\\TestClassChild' => __DIR__ . '/../..' . '/Inheritance/TestClassChild.php',
-        'In\\TestClassParent' => __DIR__ . '/../..' . '/Inheritance/TestClassParent.php',
-        'Inter\\Inter1' => __DIR__ . '/../..' . '/interfaces/Inter1.php',
-        'Inter\\Inter2' => __DIR__ . '/../..' . '/interfaces/Inter2.php',
-        'It\\FilterArray' => __DIR__ . '/../..' . '/Iterator/FilterArray.php',
-        'It\\IteratorImplementation' => __DIR__ . '/../..' . '/Iterator/IteratorImplementation.php',
-        'MM\\MagicMethods' => __DIR__ . '/../..' . '/MagicMethods/MagicMethods.php',
-        'Name\\First' => __DIR__ . '/../..' . '/namespace/First.php',
-        'Name\\Second' => __DIR__ . '/../..' . '/namespace/Second.php',
-        'SE\\SingletonChild' => __DIR__ . '/../..' . '/Singleton/SingletonChild.php',
-        'SE\\SingletonExample' => __DIR__ . '/../..' . '/Singleton/SingletonExample.php',
-        'Trt\\traitexample' => __DIR__ . '/../..' . '/Traits/traitexample.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

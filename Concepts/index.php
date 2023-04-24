@@ -19,6 +19,9 @@ use FIE\CsvFileService;
 use FIE\FileHandling;
 use In\TestClassChild;
 use In\TestClassParent;
+use DIC\Container;
+use DIC\User;
+use Sp\Client;
 
 error_reporting(E_ALL);
 
@@ -35,7 +38,7 @@ error_reporting(E_ALL);
 // echo "11. Inheritance";
 // echo "Default";
 
-$options = 11;
+$options = 13;
 
 switch($options){
 
@@ -49,7 +52,7 @@ switch($options){
 		$in = new Interfac;
 		$in->getInter();
 		$in->setInter();
-		echo $in->count() . "<br>";
+		// echo $in->count() . "<br>";
 		break;
 
 	case 3:	
@@ -142,8 +145,11 @@ switch($options){
 		// File handling
 		$f1 = new TextFileService("Files/file1.txt");
 		$f2 = new CsvFileService("Files/file2.csv");
-		$file = new FileHandling($f2);
-		$file->readFile();
+		$file1 = new FileHandling($f1);
+		$file2 = new FileHandling($f2);
+		$file1->readFile();
+		echo PHP_EOL;
+		$file2->readFile();
 		// $file->copy("Files/file1.txt", "FileHandling/file.txt");
 		// $file->delete("FileHandling/file.txt");
 		break;
@@ -154,6 +160,19 @@ switch($options){
 		$child = new TestClassChild(50, 100);
 		$child->printVariable();
 		$child->printVariable1();
+		break;
+
+	case 12:
+		//Dependency Injection Container
+		$container = new Container();
+		$user = $container->get(User::class);
+		$user->setLanguage('English');
+		$user->getLanguage();
+		break;
+
+	case 13:
+		$client = new Client;
+		$client->integerSorting();
 		break;
 
 	default:
