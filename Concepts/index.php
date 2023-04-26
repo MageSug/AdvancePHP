@@ -22,6 +22,7 @@ use In\TestClassParent;
 use DIC\Container;
 use DIC\User;
 use Sp\Client;
+use Op\StateChanger;
 
 error_reporting(E_ALL);
 
@@ -38,7 +39,7 @@ error_reporting(E_ALL);
 // echo "11. Inheritance";
 // echo "Default";
 
-$options = 13;
+$options = 14;
 
 switch($options){
 
@@ -174,6 +175,12 @@ switch($options){
 		$client = new Client;
 		$client->sortData();
 		$client->searchDatum();
+		break;
+
+	case 14:
+		$observerClient = new StateChanger;
+		$observerClient->changeStateOfPublisherOne();
+		$observerClient->changeStateOfPublisherTwo();
 		break;
 
 	default:

@@ -7,8 +7,8 @@ use Sp\SearchingInterface;
 
 class StrategyPatternExample {
 
-    public SortingInterface $sortMethod;
-    public SearchingInterface $searchMethod;
+    private SortingInterface $sortMethod;
+    private SearchingInterface $searchMethod;
   
     public function setSortingMethod(SortingInterface $sortMethod) {
         $this->sortMethod = $sortMethod;

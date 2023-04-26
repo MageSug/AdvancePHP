@@ -2,14 +2,14 @@
 
 namespace Op;
 
-use Op\ObserverInterface;
+use Op\SubscriberInterface;
 
 interface PublisherInterface {
 
-    public function addObserver(ObserverInterface $newObserver);
+    public function addSubscriber(SubscriberInterface $newSubscriber);
 
-    public function removeObserver(ObserverInterface $observer);
+    public function removeSubscriber(SubscriberInterface $subscriber);
 
-    public function notify();
+    public function notify($data);
 
 }

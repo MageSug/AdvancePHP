@@ -21,6 +21,12 @@ class Client {
     public LinearSearching $linearSearch;
     public BinarySearching $binarySearch;
 
+    public function __construct()
+    {
+        $this->sortData();
+        $this->searchDatum();
+    }
+
     public function sortData() {
         $data = [23, 32, 1, 2, 43, 21, 233, 12, 4];
 
